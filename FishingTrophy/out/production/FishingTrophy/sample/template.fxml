@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TemplateController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="116.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="17.0" prefWidth="108.0" text="Podaj nazwę ryby" />
+            <TextField fx:id="trophyTextField" />
+            <Label text="Podaj długość w [cm]" />
+            <TextField fx:id="lenghtTextField" />
+            <Button fx:id="button" mnemonicParsing="false" text="Dodaj połów" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <TableView fx:id="trophyTableView" prefHeight="186.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="103.0" text="Gatunek" />
+          <TableColumn fx:id="lenghtColumn" prefWidth="95.0" text="Rozmiar [cm]" />
+            <TableColumn fx:id="zdjecieColumn" prefWidth="95.0" text="Zdjecie" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
